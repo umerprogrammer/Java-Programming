@@ -1,0 +1,31 @@
+package com.company;
+
+import java.lang.invoke.VolatileCallSite;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.print(" Enter alphabat : ");
+        Scanner scan = new Scanner(System.in);
+        String _Alpha = scan.nextLine();
+
+
+    if (_Alpha.length() > 1 || !Character.isLetter(_Alpha.charAt(0))) {
+            System.out.println(" Please enter only single letter or alphabet.");
+        } else  //(_Alpha.contains(Vowels))
+        {
+            char chr = _Alpha.charAt(0);
+           if( chr  == 'A' || chr  == 'a' || chr == 'E' || chr == 'e' ||chr == 'I' ||chr == 'i'
+                   ||chr == 'O' ||chr == 'o' ||chr == 'U' ||chr == 'u')
+           {
+               System.out.println(" Vowel ...!");
+
+           }
+           else
+               System.out.println(" Consonant ...!");
+
+        }
+    }
+}
