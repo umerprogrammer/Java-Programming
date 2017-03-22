@@ -1,0 +1,24 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.print(" Enter any number : ");
+        Scanner scr = new Scanner(System.in);
+        int nums = scr.nextInt();
+        String b = "1";
+        int ans = 1;
+
+        for(int a = 1; a <= nums;a++)
+        {
+            System.out.println(b + " = " + ans );
+            b  =  b + " + " + String.valueOf(a+1);
+            ans  = ans +(a+1);
+        }
+
+
+    }
+}
