@@ -1,0 +1,21 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.print("Input : ");
+        Scanner scanner = new Scanner(System.in);
+        double nums = scanner.nextInt();
+
+
+        if (nums >= 0)
+            System.out.println("Output : " + "Number is positive");
+        if (nums < 0)
+            System.out.println("Output : " + "Number is negative");
+
+
+
+    }
+}
